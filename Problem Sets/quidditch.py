@@ -26,7 +26,11 @@ def main():
     score = final_score(goalNum, snitchCaught)
     print("Your team's final score is: " + str(score))
 
-# TODO: define final_score()
+def final_score(goals, snitchCaught): 
+    if snitchCaught == 1:
+        return goals * 10 + 150
+    else: 
+        return goals * 10 
 
 if __name__ == "__main__":
     main()
